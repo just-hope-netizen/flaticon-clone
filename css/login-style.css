@@ -1,0 +1,177 @@
+      :root {
+        --background-color-a: #134;
+        --background-color-b: #a22;
+        --background-color-c: #469;
+        --background-color-d: #fff;
+        --background-color-e: #bac8d3;
+        --background-color-f: rgb(248, 250, 251);
+        --background-color-g: #17f;
+        
+        --text-color-a: #fff;
+        --text-color-b: #000;
+        --text-color-c: #bac8d3;
+      }
+      html {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        overflow: hidden;
+      }
+
+      main,
+      .svg-wrapper,
+      .btn-wrapper,
+      .link-wrapper,
+      .link-wrapper > a,
+      form > div,
+      .password-wrapper,
+      .forgot-password-wrapper {
+        display: flex;
+      }
+      .btn-wrapper > a,
+      .btn,
+      section,
+      .link-wrapper > a,
+      input,
+      .password-wrapper,
+      button[type="submit"] {
+        width: 100%;
+      }
+
+      main,
+      .svg-wrapper,
+      .password-wrapper,
+      .link-wrapper > a {
+        align-items: center;
+      }
+      section,
+      .btn-wrapper,
+      .link-wrapper > a,
+      form > div,
+      form > button {
+        border-radius: 5px;
+      }
+      main {
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        background-color: var(--background-color-a);
+      }
+      .svg-wrapper {
+        color: var(--text-color-a);
+        margin-bottom: 20px;
+      }
+      section {
+        background-color: var(--background-color-d);
+        max-width: 500px;
+      }
+      .btn {
+        font-size: 24px;
+        padding: 20px;
+        cursor: pointer;
+        border: none;
+        background-color: var(--background-color-e);
+        font-weight: lighter;
+        opacity: 0.5;
+      }
+      a:nth-child(2) > button {
+        font-weight: 500;
+        background: none;
+        opacity: 1;
+      }
+      .link-wrapper {
+        padding: 40px 60px 0;
+      }
+      .link-wrapper > a {
+        height: 30px;
+        justify-content: center;
+        text-decoration: none;
+        color: var(--text-color-a);
+        background-color: var(--background-color-b);
+        padding: 25px;
+      }
+      #facebook-link {
+        margin-left: 10px;
+        background: var(--background-color-c);
+      }
+
+      .img {
+        height: 30px;
+        width: 30px;
+      }
+      form {
+        padding: 20px 60px 40px;
+      }
+      form > div {
+        border: 1px solid var(--background-color-e);
+        margin: 0 0 20px;
+      }
+
+      div > span {
+        border-right: 1px solid var(--background-color-e);
+        padding: 10px;
+        background-color: var(--background-color-f);
+      }
+      .password-wrapper {
+        padding: 0 20px;
+      }
+      input,
+      .hide-show-password,
+      .forgot-password-wrapper {
+        border: none;
+        background: none;
+      }
+      #email{
+          padding-left: 20px;
+      }
+      #text {
+        margin: 0 20px;
+      }
+      .forgot-password-wrapper {
+        justify-content: flex-end;
+        color: var(--background-color-c);
+      }
+      .forgot-password {
+        cursor: pointer;
+      }
+      button[type="submit"] {
+        background-color: var(--background-color-g);
+        color: var(--text-color-a);
+        padding: 10px;
+        border: none;
+      }
+      button[type="submit"]:hover {
+        background-color: var(--background-color-c);
+      }
+      footer{
+        max-width: 500px ;
+        padding: 20px;
+      }
+      footer > p{
+        color: var(--text-color-c);
+        text-align: center;
+      }
+      p > a{
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      @media (max-width: 576px) {
+        section,
+        .link-wrapper > a {
+          width: 80%;
+        }
+      }
+      @media  (max-width: 450px) {
+        a > span{
+          display: none;
+        }
+        form, .link-wrapper{
+          padding:20px 5px;
+        }
+        
+      }

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="title icon" href="/img/flaticon_negative.png" />
+    <title>flaticon</title>
+    <link rel="stylesheet" href="/css/login-style.css">
+
+
+  </head>
+
+  <body>
+    <main>
+      <div class="svg-wrapper">
+        <img src="/svg/logo.svg" alt="svg" class="svg" />
+      </div>
+      <section>
+        <div class="btn-wrapper">
+          <a href="registerPage.html">
+            <button class="btn">Sign up</button>
+          </a>
+
+          <a>
+            <button class="btn">Sign in</button>
+          </a>
+        </div>
+
+        <div class="link-wrapper">
+          <a href="">
+            <img src="/img/google-logo.ico" alt="Google logo" class="img" />
+           <span>
+             Google
+
+           </span> 
+          </a>
+          <a href="" id="facebook-link">
+            <img src="/img/facebook.ico" alt="facebook logo" class="img" />
+            <span>
+
+              Facebook
+            </span>
+          </a>
+        </div>
+        <form action="" method="post" autocomplete="on">
+          <div>
+            <span>
+              <img src="/svg/user.svg" alt="user svg" class="img" />
+            </span>
+            <label for="text"></label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              id="email"
+            />
+          </div>
+
+          <div>
+            <span>
+              <img src="/svg/lock.svg" alt="lock svg" class="img" />
+            </span>
+            <div class="password-wrapper">
+              <label for="password"></label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                autocomplete="on"
+                placeholder="Password"
+              />
+              <button
+                type="button"
+                class="hide-show-password"
+                onClick="showPassword()"
+              >
+                <img src="/svg/eye.svg" alt="eye svg" class="img" />
+              </button>
+            </div>
+          </div>
+
+          <div class="forgot-password-wrapper">
+            <p class="forgot-password">Forgot your password?</p>
+          </div>
+
+          <button type="submit">
+            <span id="sign"> Sign In </span>
+          </button>
+        </form>
+      </section>
+      <footer>
+        <p>
+          Registering to this website, you accept our <a href="">Terms of use</a> of use
+          and our <a href="">Privacy policy</a>
+        </p>
+      </footer>
+    </main>
+
+    <script>
+      const showPassword = () => {
+        let passwordInput = document.getElementById("password");
+        if (passwordInput.type === "text") {
+          passwordInput.type = "password";
+        } else {
+          passwordInput.type = "text";
+        }
+      };
+    </script>
+  </body>
+</html>
